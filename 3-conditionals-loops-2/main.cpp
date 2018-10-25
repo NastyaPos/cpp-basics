@@ -39,10 +39,10 @@ int main()
 		{
 			double ln = 0;
 			int n; 
-			for (n=0; n<=MaxIters; n++)
+			for (n=1; n<=MaxIters; n++)
 			{
-				T = -pow(xn,n)/n;
-				ln += T;
+				T = pow(xn,n)/n;
+				ln -= T;
 				if ((abs(T) < eps) || (n > MaxIters)) break;	
 		    }
 			cout << "|" << setw(13) << xn << setw(5) << "|";
