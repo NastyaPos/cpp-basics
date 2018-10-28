@@ -9,13 +9,13 @@ int main()
 	
 
 	cout << "Dopustimyye znachenniya x: -1<=x<1" << endl;
-		cout << "vvedite znachenie xn ";
+		cout << "vvedite znachenie xn: ";
 		cin >> xn;
-		cout << "vvedite znachenie xk ";
+		cout << "vvedite znachenie xk: ";
 		cin >> xk;
-		cout << "vvedite znachenie dx ";
+		cout << "vvedite znachenie dx: ";
 		cin >> dx;
-		cout << "vvedite znachenie tochnosti eps ";
+		cout << "vvedite znachenie tochnosti eps: ";
 		cin >> eps;
 
 		if (( xn <= -1) || (xn > 1) || (xk <= -1) || (xk > 1) || (fabs(dx) < eps) || (eps <= 0))
