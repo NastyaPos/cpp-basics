@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 { 
-	const int MaxIters = 500;
+	const int MaxIters = 1000;
 	double xn, xk, dx, eps, ch_r;
 	
 
