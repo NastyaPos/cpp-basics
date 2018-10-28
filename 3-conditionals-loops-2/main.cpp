@@ -5,7 +5,7 @@ using namespace std;
 int main()
 { 
 	const int MaxIters = 500;
-	double xn, xk, dx, eps, T;
+	double xn, xk, dx, eps, ch_r;
 	
 
 	cout << "Dopustimyye znachenniya x: -1<=x<1" << endl;
@@ -41,9 +41,9 @@ int main()
 			int n; 
 			for (n=1; n<=MaxIters; n++)
 			{
-				T = pow(xn,n)/n;
-				ln -= T;
-				if ((abs(T) < eps) || (n > MaxIters)) break;	
+				ch_r = pow(xn,n)/n;
+				ln -= ch_r;
+				if ((abs(ch_r) < eps) || (n > MaxIters)) break;
 		    }
 			cout << "|" << setw(13) << xn << setw(5) << "|";
 
