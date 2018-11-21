@@ -18,7 +18,7 @@ int main()
 		cout << "vvedite znachenie tochnosti eps: ";
 		cin >> eps;
 
-		if (( xn <= -1) || (xn > 1) || (xk <= -1) || (xk > 1) || (fabs(dx) < eps) || (eps <= 0))
+		if (( xn < -1) || (xn >= 1) || (xk < -1) || (xk >= 1) || (fabs(dx) < eps) || (eps <= 0))
 		{
 			cout << "wrong input data!!!";
 			return 1;
