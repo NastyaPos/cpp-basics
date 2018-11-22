@@ -12,7 +12,7 @@ void PrintTableHead() {
 	cout << "| - - - - - - - - | - - - - - - - |\n";
 }
 
-double ComputeSeries(double xn, int &n, const int MaxIters, double eps) {
+double ComputeSeries(double xn, int n, const int MaxIters, double eps) {
 	double ln = 0;
 	for (n = 1; n <= MaxIters; n++)
 	{
