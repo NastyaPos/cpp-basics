@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{FB354676-9D5C-426A-9498-BF1F7D294735}</ProjectGuid>
-    <RootNamespace>My2conditionalsloops1</RootNamespace>
+    <ProjectGuid>{EC764982-85DA-47FC-BCE9-9FB9B62251C2}</ProjectGuid>
+    <RootNamespace>My08structures</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>02-conditionals-loops-1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

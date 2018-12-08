@@ -23,6 +23,7 @@
     <ProjectGuid>{604836E0-9F3C-4D3E-A17A-3AD5A70DB343}</ProjectGuid>
     <RootNamespace>My4functions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>04-functions</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
