@@ -2,44 +2,47 @@
 
 using namespace std;
 
-int main() {
-	int const kArraySize = 12;
-	int arr[kArraySize] = { -3, 32, 8, 0, 45, 23, -12, 1, 0, 10, 15,-6 };
-	cout << "Initial array: ";
+int main()
+{
+	const int kArraySize = 8;
+	double arr[kArraySize] = { 0.2, 0.0, 4.2, -2.0, 0.0, 3.2, 0.0, -4.2 };
+
+	cout << "Initial array:\n";
 	for (int i = 0; i < kArraySize; i++)
 		cout << arr[i] << " ";
-	
-	int arr_min = arr[0];
+	cout << endl;
 
+	double arr_min = arr[0];
 	for (int i = 1; i < kArraySize; i++)
-		if (arr[i] < arr_min) arr_min = arr[i];
-	cout << "\nmin = " << arr_min << endl;
+		if (arr[i] < arr_min)
+			arr_min = arr[i];
+	cout << "\nMin = " << arr_min << endl;
 
-	int firstpos = -1, lastpos = -1;
-
+	int first_positive = -1, last_positive = -1;
 	for (int i = 0; i < kArraySize; i++)
 		if (arr[i] > 0)
 		{
-			firstpos = i;
+			first_positive = i;
 			break;
 		}
 	for (int i = kArraySize - 1; i >= 0; i--)
 		if (arr[i] > 0)
 		{
-			lastpos = i;
+			last_positive = i;
 			break;
 		}
-	if ((firstpos > -1) && (firstpos < lastpos))
+
+	if ((first_positive > -1) && (first_positive < last_positive))
 	{
-		int sum = 0;
-		for (int i = firstpos + 1; i < lastpos; i++)
+		double sum = 0.0;
+		for (int i = first_positive + 1; i < last_positive; i++)
 			sum += arr[i];
 
-		cout << "sum = " << sum << endl;
+		cout << "\nSum = " << sum << endl;
 	}
 	else
 	{
-		cout << "\nNo two positive elements were found.";
+		cout << "\nNo two positive elements were found.\n";
 	}
 
 	for (int i = 0; i < kArraySize - 1; i++)
@@ -47,7 +50,7 @@ int main() {
 			if (arr[j] != 0 && arr[j + 1] == 0)
 				swap(arr[j], arr[j + 1]);
 
-	cout << "\nchanged array: ";
+	cout << "\nNew array:\n";
 	for (int i = 0; i < kArraySize; i++)
 		cout << arr[i] << " ";
 	cout << endl;
